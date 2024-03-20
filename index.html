@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goa Trip Itinerary</title>
     <style>
-        
+        /* Reset default styles */
         body {
             font-family: 'Segoe UI', Tahoma, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
         }
 
+        /* Header styles */
         .header {
-            position: relative; /* Added relative positioning */
+            position: relative;
             background-image: url('a.jpg');
             background-size: cover;
             background-position: center;
@@ -32,6 +34,7 @@
             font-size: 3em;
         }
 
+        /* Scroll down button styles */
         .scroll-down {
             position: absolute;
             bottom: 20px;
@@ -63,17 +66,25 @@
             margin-left: -6px;
         }
 
+        /* Container styles */
         .container {
             max-width: 900px;
             margin: 40px auto;
             padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        /* Day styles */
         .day {
             margin-bottom: 40px;
-            border-bottom: 2px solid #ccc;
             padding-bottom: 20px;
             transition: background-color 0.3s;
+        }
+
+        .day:hover {
+            background-color: #f9f9f9;
         }
 
         .day h2 {
@@ -81,12 +92,26 @@
             color: #333;
         }
 
-        .day p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #666;
+        .day ul {
+            list-style-type: none;
+            padding: 0;
         }
 
+        .day li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .day li::before {
+            content: "\2022";
+            color: #ff7f50;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Call to action styles */
         .cta {
             text-align: center;
             margin-top: 40px;
@@ -124,37 +149,32 @@
             <a href="#itinerary"></a>
         </div>
     </div>
-
     <div class="container" id="itinerary">
         <div class="day">
             <h2>Day 1: Embarking on the Goa Adventure</h2>
             <p>Late Night Departure: Roll out of Bangalore by 11 PM, buzzing with excitement for the journey ahead. We'll coordinate five convenient pickup locations (examples: Indiranagar Metro Station, Koramangala Forum Mall, Majestic Bus Stand) to gather everyone for the overnight journey.</p>
         </div>
-
         <div class="day">
             <h2>Day 2: Sun, Sand, and Settling In</h2>
             <p>Goa Arrival and Resort Check-in: As the sun paints the Goan sky, we'll arrive at the vibrant Ginger Tree Boutique Resort around 11 AM. Settle in, freshen up, and let's gather for a delicious lunch by 1 PM.</p>
             <p>Morjim Beach Extravaganza: Feel the sand between your toes as we head to the captivating Morjim Beach. Unleash your inner beach bum until 6 PM – play games, build sandcastles, or simply soak up the serenity.</p>
             <p>Anjuna Nightlife and Markets: After a delightful dinner back at the resort, we’ll delve into the electrifying nightlife of Anjuna Beach. Explore the bustling markets, their treasures shimmering under the moonlight.</p>
         </div>
-
         <div class="day">
             <h2>Day 3: Watersports Frenzy and Goan Exploration</h2>
             <p>Rise and Shine: Start the day on an active note, waking up by 6 AM and getting ready for a thrilling day. Fuel up with a hearty breakfast at the resort by 8 AM.</p>
             <p>Watersports Extravaganza: Get those adrenaline levels pumping! We'll embark on a full-day watersports adventure, conquering five exhilarating activities: scuba diving, banana boat rides, jet skiing, speed boating, and parasailing.</p>
             <p>Goa at Your Leisure: Returning to the resort around 5-6 PM, the rest of the evening is yours to design. Discover the legendary pubs and beaches of Baga and Calangute – let your adventurous spirit guide you.</p>
         </div>
-
         <div class="day">
             <h2>Day 4: Farewell to Goa, Memories in the Making</h2>
             <p>Leisurely Morning and Checkout: Enjoy a relaxed morning and savor your last breakfast at the resort (available until 10 AM). Pack your bags full of unforgettable experiences as we bid adieu to Ginger Tree Boutique Resort.</p>
             <p>Poolside Celebration: Before departing, we'll throw an unforgettable pool party– a final splash of Goan magic to cherish!</p>
             <p>Agoda Fort Exploration and Departure: Immerse yourselves in Goan history at the majestic Agoda Fort. As the sun sets, we'll board our bus back to Bangalore, hearts filled with the vibrant spirit of Goa.</p>
         </div>
-
         <div class="cta">
-            <a href="tel:+1234567890">Call to Book</a>
-            <a href="#hotel-photos">View Hotel Photos</a>
+            <a href="tel:+916376787763">Call to Book</a>
+            <a href="https://www.makemytrip.com/hotels/ginger_tree_boutique_resort-details-goa.html" target="_blank">View Hotel Photos</a>
             <a href="#watersports-info">Know More about Watersports</a>
         </div>
     </div>
