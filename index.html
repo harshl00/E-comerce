@@ -3,190 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goa Trip Itinerary</title>
+    <title>Special Mother's Day Greeting Card</title>
     <style>
-        /* Reset default styles */
         body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
         }
-
-        /* Header styles */
-        .header {
-            position: relative;
-            background-image: url('a.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-            overflow: hidden;
-            transition: transform 0.5s ease;
-        }
-
-        .header h1 {
-            font-size: 3em;
-        }
-
-        /* Scroll down button styles */
-        .scroll-down {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
-        }
-
-        .scroll-down a {
-            display: block;
-            width: 40px;
-            height: 40px;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            position: relative;
-        }
-
-        .scroll-down a::before {
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            border-top: 2px solid #fff;
-            border-right: 2px solid #fff;
-            transform: rotate(-45deg);
-            top: 50%;
-            left: 50%;
-            margin-top: -6px;
-            margin-left: -6px;
-        }
-
-        /* Container styles */
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
+        .card {
+            max-width: 600px;
+            margin: 20px auto;
             background-color: #fff;
-            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
         }
-
-        /* Day styles */
-        .day {
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            transition: background-color 0.3s;
-        }
-
-        .day:hover {
-            background-color: #f9f9f9;
-        }
-
-        .day h2 {
-            font-size: 2em;
-            color: #333;
-        }
-
-        .day ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .day li {
-            margin-bottom: 10px;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .day li::before {
-            content: "\2022";
-            color: #ff7f50;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-
-        /* Call to action styles */
-        .cta {
+        .greeting {
+            padding: 20px;
             text-align: center;
-            margin-top: 40px;
         }
-
-        .cta a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff7f50;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: background-color 0.3s;
-            margin-right: 10px;
+        .photo-album {
+            padding: 20px;
         }
-
-        .cta a:last-child {
-            margin-right: 0;
+        .photo-album h2 {
+            text-align: center;
         }
-
-        .cta a:hover {
-            background-color: #ff6347;
+        .slideshow {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
         }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
+        .slide {
+            width: 100%;
+            display: block;
+            transition: opacity 0.5s ease-in-out;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Embark on a Goa Adventure</h1>
-        <div class="scroll-down">
-            <a href="#itinerary"></a>
+    <div class="card">
+        <div class="greeting">
+            <h1>Happy Mother's Day!</h1>
+            <p>Dear Mom,</p>
+            <p>This is just a little something to show you how much you mean to me.</p>
+        </div>
+        <div class="photo-album">
+            <h2>Memories with Mom</h2>
+            <div class="slideshow">
+                <img src="placeholder.jpg" alt="Placeholder Photo" class="slide">
+            </div>
         </div>
     </div>
-    <div class="container" id="itinerary">
-        <div class="day">
-            <h2>Day 1: Embarking on the Goa Adventure</h2>
-            <ul>
-                <li><b>Late Night Departure:</b> Roll out of Bangalore by 11 PM, buzzing with excitement for the journey ahead.</li>
-                <li>We'll coordinate five convenient pickup locations (examples: Indiranagar Metro Station, Koramangala Forum Mall, Majestic Bus Stand) to gather everyone for the overnight journey.</li>
-            </ul>
-        </div>
-        <div class="day">
-            <h2>Day 2: Sun, Sand, and Settling In</h2>
-            <ul>
-                <li><b>Arrival and Resort Check-in:</b> As the sun paints the Goan sky, we'll arrive at the vibrant Ginger Tree Boutique Resort around 11 AM. Settle in, freshen up, and let's gather for a delicious lunch by 1 PM.</li>
-                <li><b>Morjim Beach Extravaganza:</b> Feel the sand between your toes as we head to the captivating Morjim Beach. Unleash your inner beach bum until 6 PM – play games, build sandcastles, or simply soak up the serenity.</li>
-                <li><b>Anjuna Nightlife and Markets:</b> After a delightful dinner back at the resort, we’ll delve into the electrifying nightlife of Anjuna Beach. Explore the bustling markets, their treasures shimmering under the moonlight.</li>
-            </ul>
-        </div>
-        <div class="day">
-            <h2>Day 3: Watersports Frenzy and Goan Exploration</h2>
-            <ul>
-                <li><b>Rise and Shine:</b> Start the day on an active note, waking up by 6 AM and getting ready for a thrilling day. Fuel up with a hearty breakfast at the resort by 8 AM.</li>
-                <li><b>Watersports Extravaganza:</b> Get those adrenaline levels pumping! We'll embark on a full-day watersports adventure, conquering five exhilarating activities: scuba diving, banana boat rides, jet skiing, speed boating, and parasailing.</li>
-                <li><b>Goa at Your Leisure:</b> Returning to the resort around 5-6 PM, the rest of the evening is yours to design. Discover the legendary pubs and beaches of Baga and Calangute – let your adventurous spirit guide you.</li>
-            </ul>
-        </div>
-        <div class="day">
-            <h2>Day 4: Farewell to Goa, Memories in the Making</h2>
-            <ul>
-                <li><b>Leisurely Morning and Checkout:</b> Enjoy a relaxed morning and savor your last breakfast at the resort (available until 10 AM). Pack your bags full of unforgettable experiences as we bid adieu to Ginger Tree Boutique Resort.</li>
-                <li><b>Poolside Celebration:</b> Before departing, we'll throw an unforgettable pool party– a final splash of Goan magic to cherish!</li>
-                <li><b>Agoda Fort Exploration and Departure:</b> Immerse yourselves in Goan history at the majestic Agoda Fort. As the sun sets, we'll board our bus back to Bangalore, hearts filled with the vibrant spirit of Goa.</li>
-            </ul>
-        </div>
-        <div class="cta">
-            <a href="tel:+916376787763">Call to Book</a>
-            <a href="https://www.makemytrip.com/hotels/ginger_tree_boutique_resort-details-goa.html" target="_blank">View Hotel Photos</a>
-            <br><br>
-            <a href="https://divesport.in/product/scuba-diving-at-grand-island-9d-cinema-snow-park-with-iceberg-5-watersports-combo/" target="_blank">Know More about Watersports</a>
-        </div>
-    </div>
+    <audio src="background_music.mp3" autoplay loop></audio>
+    <script>
+        const images = ["a.jpg","b.jpg","c.jpg","a2.jpg","a3.jpg","a4.jpg","a5.jpg","b2.jpg","b3.jpg","b4.jpg","c3.jpg","c2.jpg","c4.jpg","e2.jpg","e.jpg","d.jpg","d2.jpg","d3.jpg","d4.jpg"]; // Replace with actual photo URLs
+
+        let index = 0;
+        const slide = document.querySelector(".slide");
+
+        function changeSlide() {
+            slide.src = images[index];
+            index = (index + 1) % images.length;
+        }
+
+        setInterval(changeSlide, 3000); // Change slide every 3 seconds
+    </script>
 </body>
 </html>
