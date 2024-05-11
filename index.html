@@ -56,8 +56,15 @@
             display: block;
             transition: opacity 0.5s ease-in-out;
         }
-        audio {
-            display: none; /* Hide the audio player */
+        #startMusic {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -75,7 +82,8 @@
             </div>
         </div>
     </div>
-    <audio src="llo.mp3" autoplay loop></audio>
+    <button id="startMusic">Start Music</button>
+    <audio id="backgroundMusic" src="llo.mp3" loop></audio>
     <script>
         const images = ["a.jpg","b.jpg","c.jpg","a2.jpg","a3.jpg","a4.jpg","a5.jpg","b2.jpg","b3.jpg","b4.jpg","c3.jpg","c2.jpg","c4.jpg","e2.jpg","e.jpg","d.jpg","d2.jpg","d3.jpg","d4.jpg"]; // Replace with actual photo URLs
 
@@ -88,6 +96,15 @@
         }
 
         setInterval(changeSlide, 3000); // Change slide every 3 seconds
+
+        // Play background music on button click
+        const startMusicBtn = document.getElementById('startMusic');
+        const backgroundMusic = document.getElementById('backgroundMusic');
+
+        startMusicBtn.addEventListener('click', () => {
+            backgroundMusic.play();
+            startMusicBtn.style.display = 'none'; // Hide the button after starting the music
+        });
     </script>
 </body>
 </html>
