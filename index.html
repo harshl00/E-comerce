@@ -68,7 +68,7 @@
         }
     </style>
 </head>
-<body>
+<body ontouchstart="">
     <div class="card">
         <div class="greeting">
             <h1>Happy Mother's Day!</h1>
@@ -83,7 +83,7 @@
         </div>
     </div>
     <button id="startMusic">Start Music</button>
-    <audio id="backgroundMusic" src="llo.mp3" loop></audio>
+    <audio id="backgroundMusic" src="background_music.mp3" loop></audio>
     <script>
         const images = ["a.jpg","b.jpg","c.jpg","a2.jpg","a3.jpg","a4.jpg","a5.jpg","b2.jpg","b3.jpg","b4.jpg","c3.jpg","c2.jpg","c4.jpg","e2.jpg","e.jpg","d.jpg","d2.jpg","d3.jpg","d4.jpg"]; // Replace with actual photo URLs
 
@@ -97,13 +97,20 @@
 
         setInterval(changeSlide, 3000); // Change slide every 3 seconds
 
-        // Play background music on button click
+        // JavaScript code to play background music on touch event
         const startMusicBtn = document.getElementById('startMusic');
         const backgroundMusic = document.getElementById('backgroundMusic');
 
         startMusicBtn.addEventListener('click', () => {
             backgroundMusic.play();
             startMusicBtn.style.display = 'none'; // Hide the button after starting the music
+        });
+
+        // Start playing background music on touch event
+        document.body.addEventListener('touchstart', () => {
+            backgroundMusic.play();
+            // Remove the event listener after the music starts to prevent multiple playbacks
+            document.body.removeEventListener('touchstart', arguments.callee);
         });
     </script>
 </body>
